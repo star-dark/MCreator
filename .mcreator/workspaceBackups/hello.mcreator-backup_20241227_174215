@@ -1,0 +1,2046 @@
+{
+  "mod_elements": [
+    {
+      "name": "KingRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/KingRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC/KING"
+    },
+    {
+      "name": "King",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/king_spawn_egg.json",
+          "src/main/java/net/mcreator/hello/entity/KingEntity.java",
+          "src/main/java/net/mcreator/hello/client/renderer/KingRenderer.java"
+        ]
+      },
+      "path": "~/NPC/KING"
+    },
+    {
+      "name": "QuestGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/world/inventory/QuestGuiMenu.java",
+          "src/main/java/net/mcreator/hello/network/QuestGuiButtonMessage.java",
+          "src/main/java/net/mcreator/hello/client/gui/QuestGuiScreen.java"
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "OpenQuestGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_quest_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/network/OpenQuestGUIMessage.java"
+        ]
+      },
+      "path": "~/UserGUI"
+    },
+    {
+      "name": "OpenQuestGUIPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_quest_gui_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/OpenQuestGUIPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UserGUI"
+    },
+    {
+      "name": "Quest1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/Quest1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "IsQuest1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_quest_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/IsQuest1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "Quest2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/Quest2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "IsQuest2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_quest_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/IsQuest2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "QuestProvider1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_provider_1",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/QuestProvider1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "QuestProvideGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_provide_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/network/QuestProvideGUIButtonMessage.java",
+          "src/main/java/net/mcreator/hello/world/inventory/QuestProvideGUIMenu.java",
+          "src/main/java/net/mcreator/hello/client/gui/QuestProvideGUIScreen.java"
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "BringQuest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bring_quest",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/BringQuestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "ClickAcceptButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "click_accept_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ClickAcceptButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "Pig",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/entity/PigEntity.java",
+          "src/main/java/net/mcreator/hello/client/renderer/PigRenderer.java",
+          "src/main/resources/assets/hello/models/item/pig_spawn_egg.json",
+          "src/main/resources/data/hello/neoforge/biome_modifier/pig_biome_modifier.json"
+        ]
+      },
+      "path": "~/PIG"
+    },
+    {
+      "name": "ClickRejectButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "click_reject_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ClickRejectButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "QuestNotFinished",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_not_finished",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/network/QuestNotFinishedButtonMessage.java",
+          "src/main/java/net/mcreator/hello/client/gui/QuestNotFinishedScreen.java",
+          "src/main/java/net/mcreator/hello/world/inventory/QuestNotFinishedMenu.java"
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "QuestFinished",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_finished",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/network/QuestFinishedButtonMessage.java",
+          "src/main/java/net/mcreator/hello/world/inventory/QuestFinishedMenu.java",
+          "src/main/java/net/mcreator/hello/client/gui/QuestFinishedScreen.java"
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "Clearaitemeulsonedeulgoissneungyeongu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clearaitemeulsonedeulgoissneungyeongu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ClearaitemeulsonedeulgoissneungyeonguProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/clear"
+    },
+    {
+      "name": "Killpig",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killpig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/KillpigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PIG"
+    },
+    {
+      "name": "Magicwand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicwand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/MagicwandItem.java",
+          "src/main/resources/assets/hello/models/item/magicwand.json"
+        ]
+      },
+      "path": "~/clear"
+    },
+    {
+      "name": "ClickRewardButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "click_reward_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ClickRewardButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "IsComplete1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_complete_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/IsComplete1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "IsComplete2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_complete_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/IsComplete2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/quest_gui"
+    },
+    {
+      "name": "GetMoney",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_money",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/GetMoneyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/clear"
+    },
+    {
+      "name": "Money",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/client/screens/MoneyOverlay.java"
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "EarnMoney",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earn_money",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/EarnMoneyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/clear"
+    },
+    {
+      "name": "ManwonRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manwon_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ManwonRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "Manwon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manwon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/manwon.json",
+          "src/main/java/net/mcreator/hello/item/ManwonItem.java"
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "MoneyGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/client/gui/MoneyGuiScreen.java",
+          "src/main/java/net/mcreator/hello/network/MoneyGuiButtonMessage.java",
+          "src/main/java/net/mcreator/hello/world/inventory/MoneyGuiMenu.java"
+        ]
+      },
+      "path": "~/UserGUI/money_gui"
+    },
+    {
+      "name": "OpenMoneyGUIPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_money_gui_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/OpenMoneyGUIPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UserGUI"
+    },
+    {
+      "name": "GetManwonFromUser",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_manwon_from_user",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/GetManwonFromUserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/money_gui"
+    },
+    {
+      "name": "OchunwonRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ochunwon_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/OchunwonRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "Ochunwon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ochunwon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/OchunwonItem.java",
+          "src/main/resources/assets/hello/models/item/ochunwon.json"
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "Chunwon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chunwon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/chunwon.json",
+          "src/main/java/net/mcreator/hello/item/ChunwonItem.java"
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "ChunwonRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chunwon_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ChunwonRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Money"
+    },
+    {
+      "name": "GetOchunwonFromUser",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_ochunwon_from_user",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/GetOchunwonFromUserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/money_gui"
+    },
+    {
+      "name": "GetChunwonFromUser",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_chunwon_from_user",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/GetChunwonFromUserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UserGUI/money_gui"
+    },
+    {
+      "name": "Setitemstack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setitemstack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/SetitemstackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BringReward",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bring_reward",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/BringRewardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "Queen",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "queen",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hello/neoforge/biome_modifier/queen_biome_modifier.json",
+          "src/main/java/net/mcreator/hello/client/renderer/QueenRenderer.java",
+          "src/main/resources/assets/hello/models/item/queen_spawn_egg.json",
+          "src/main/java/net/mcreator/hello/entity/QueenEntity.java"
+        ]
+      },
+      "path": "~/NPC/Queen"
+    },
+    {
+      "name": "ClickCancelButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "click_cancel_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ClickCancelButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "FarmerJobNpc",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/client/renderer/FarmerJobNpcRenderer.java",
+          "src/main/resources/assets/hello/models/item/farmer_job_npc_spawn_egg.json",
+          "src/main/java/net/mcreator/hello/entity/FarmerJobNpcEntity.java",
+          "src/main/resources/data/hello/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "FarmerTalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_talk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/FarmerTalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobNpcClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/JobNpcClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobNpcGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/world/inventory/JobNpcGUIMenu.java",
+          "src/main/java/net/mcreator/hello/network/JobNpcGUIButtonMessage.java",
+          "src/main/java/net/mcreator/hello/client/gui/JobNpcGUIScreen.java"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobNpcGuiText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_gui_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/JobNpcGuiTextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobCloseGui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_close_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/JobCloseGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobGetSuccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_get_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/JobGetSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "FisherJobNpc",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fisher_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/entity/FisherJobNpcEntity.java",
+          "src/main/resources/assets/hello/models/item/fisher_job_npc_spawn_egg.json",
+          "src/main/resources/data/hello/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
+          "src/main/java/net/mcreator/hello/client/renderer/FisherJobNpcRenderer.java"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "MinerJobNpc",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/entity/MinerJobNpcEntity.java",
+          "src/main/java/net/mcreator/hello/client/renderer/MinerJobNpcRenderer.java",
+          "src/main/resources/data/hello/neoforge/biome_modifier/miner_job_npc_biome_modifier.json",
+          "src/main/resources/assets/hello/models/item/miner_job_npc_spawn_egg.json"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "FisherTalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fisher_talk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/FisherTalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "MinerTalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_talk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/MinerTalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "FarmerDregs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_dregs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FarmerDregsItem.java",
+          "src/main/resources/assets/hello/models/item/farmer_dregs.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerRoot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/farmer_root.json",
+          "src/main/java/net/mcreator/hello/item/FarmerRootItem.java"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerSpore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_spore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FarmerSporeItem.java",
+          "src/main/resources/assets/hello/models/item/farmer_spore.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerHoeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_hoe_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/FarmerHoeEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FishAngler",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_angler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_angler.json",
+          "src/main/java/net/mcreator/hello/item/FishAnglerItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishArapaima",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_arapaima",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishArapaimaItem.java",
+          "src/main/resources/assets/hello/models/item/fish_arapaima.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishBass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_bass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_bass.json",
+          "src/main/java/net/mcreator/hello/item/FishBassItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishBlueGill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_blue_gill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_blue_gill.json",
+          "src/main/java/net/mcreator/hello/item/FishBlueGillItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishCarp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_carp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_carp.json",
+          "src/main/java/net/mcreator/hello/item/FishCarpItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishCatfish",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_catfish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishCatfishItem.java",
+          "src/main/resources/assets/hello/models/item/fish_catfish.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishElectricEel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_electric_eel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_electric_eel.json",
+          "src/main/java/net/mcreator/hello/item/FishElectricEelItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishHailbut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_hailbut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishHailbutItem.java",
+          "src/main/resources/assets/hello/models/item/fish_hailbut.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishHerring",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_herring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishHerringItem.java",
+          "src/main/resources/assets/hello/models/item/fish_herring.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishMuskellunge",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_muskellunge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_muskellunge.json",
+          "src/main/java/net/mcreator/hello/item/FishMuskellungeItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishPerch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_perch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_perch.json",
+          "src/main/java/net/mcreator/hello/item/FishPerchItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishPollock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_pollock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishPollockItem.java",
+          "src/main/resources/assets/hello/models/item/fish_pollock.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRainbowTrout",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rainbow_trout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishRainbowTroutItem.java",
+          "src/main/resources/assets/hello/models/item/fish_rainbow_trout.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRedBelliedPiranha",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_red_bellied_piranha",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishRedBelliedPiranhaItem.java",
+          "src/main/resources/assets/hello/models/item/fish_red_bellied_piranha.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRedGrouper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_red_grouper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishRedGrouperItem.java",
+          "src/main/resources/assets/hello/models/item/fish_red_grouper.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishSynodontis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_synodontis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishSynodontisItem.java",
+          "src/main/resources/assets/hello/models/item/fish_synodontis.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishTambaqui",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tambaqui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishTambaquiItem.java",
+          "src/main/resources/assets/hello/models/item/fish_tambaqui.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishTuna",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tuna",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishTunaItem.java",
+          "src/main/resources/assets/hello/models/item/fish_tuna.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_rod_lv_1.json",
+          "src/main/java/net/mcreator/hello/item/FishRodLv1Item.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv15",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/fish_rod_lv_15.json",
+          "src/main/java/net/mcreator/hello/item/FishRodLv15Item.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv30",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_30",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FishRodLv30Item.java",
+          "src/main/resources/assets/hello/models/item/fish_rod_lv_30.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/FishRodEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "OreCoal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_coal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/OreCoalItem.java",
+          "src/main/resources/assets/hello/models/item/ore_coal.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreCopper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/ore_copper.json",
+          "src/main/java/net/mcreator/hello/item/OreCopperItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_diamond",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/OreDiamondItem.java",
+          "src/main/resources/assets/hello/models/item/ore_diamond.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreEmerald",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_emerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/ore_emerald.json",
+          "src/main/java/net/mcreator/hello/item/OreEmeraldItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreGold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/OreGoldItem.java",
+          "src/main/resources/assets/hello/models/item/ore_gold.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreIron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/OreIronItem.java",
+          "src/main/resources/assets/hello/models/item/ore_iron.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreLapisLazuli",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_lapis_lazuli",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/OreLapisLazuliItem.java",
+          "src/main/resources/assets/hello/models/item/ore_lapis_lazuli.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/MinerPickEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/miner_pick_lv_1.json",
+          "src/main/java/net/mcreator/hello/item/MinerPickLv1Item.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv15",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/miner_pick_lv_15.json",
+          "src/main/java/net/mcreator/hello/item/MinerPickLv15Item.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv30",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_30",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/MinerPickLv30Item.java",
+          "src/main/resources/assets/hello/models/item/miner_pick_lv_30.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "quest_Contents",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "QuestContents1",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "QuestContents2",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Questgoal1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Questprogress1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Questgoal2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Questprogress2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MainQuestExist",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SubQuestExist",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MainQuestRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SubQuestRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "MainRewardRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SubRewardRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "my_money",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "reward_man",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "reward_ochun",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "reward_chun",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "reward_money",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "reward_money2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "reward_money1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "job_production",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "talk_with",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:FishRodLv30",
+      "~CUSTOM:FishRodLv15",
+      "~CUSTOM:FishRodLv1"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:MinerPickLv30",
+      "~CUSTOM:MinerPickLv15",
+      "~CUSTOM:MinerPickLv1"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "ko_kr": {
+      "entity.hello.king": "King",
+      "gui.hello.quest_provide_gui.label_bosang": "보상 :",
+      "item.hello.fish_herring": "Fish Herring",
+      "item.hello.fish_perch": "Fish Perch",
+      "gui.hello.quest_finished.label_bosang": "보상 :",
+      "item.hello.ore_diamond": "Ore Diamond",
+      "gui.hello.quest_gui.label_jinhaengjungin_kweseuteu": "Quest",
+      "item.hello.miner_job_npc_spawn_egg": "Miner Job Npc Spawn Egg",
+      "gui.hello.quest_provide_gui.button_geojeol": "거절",
+      "item.hello.manwon": "Manwon",
+      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
+      "item.hello.ore_iron": "Ore Iron",
+      "gui.hello.quest_not_finished.label_bosang": "보상 :",
+      "item.hello.fish_blue_gill": "Fish Blue Gill",
+      "item.hello.ochunwon": "Ochunwon",
+      "gui.hello.money_gui.button_10000": "10000",
+      "item.hello.pig_spawn_egg": "Pig Spawn Egg",
+      "gui.hello.job_npc_gui.button_surag": "수락",
+      "item.hello.fish_rod_lv_30": "Fish Rod Lv 3 0",
+      "gui.hello.quest_provide_gui.label_quest_contents": "quest contents",
+      "item.hello.king_spawn_egg": "King Spawn Egg",
+      "item.hello.ore_copper": "Ore Copper",
+      "item.hello.miner_pick_lv_15": "Miner Pick Lv 1 5",
+      "item.hello.fish_arapaima": "Fish Arapaima",
+      "item.hello.ore_gold": "Ore Gold",
+      "gui.hello.quest_gui.label_quest2": "quest2",
+      "item.hello.ore_emerald": "Ore Emerald",
+      "gui.hello.quest_gui.label_quest3": "quest3",
+      "gui.hello.money_gui.label_kweseuteu": "퀘스트",
+      "gui.hello.quest_gui.label_quest1": "quest1",
+      "item.hello.ore_lapis_lazuli": "Ore Lapis Lazuli",
+      "gui.hello.quest_gui.label_kweseuteu": "퀘스트",
+      "gui.hello.quest_provide_gui.button_surag": "수락",
+      "gui.hello.money_gui.button_5000": "5000",
+      "entity.hello.pig": "Pig",
+      "gui.hello.money_gui.button_1000": "1000",
+      "gui.hello.quest_not_finished.button_geojeol": "거절",
+      "item.hello.fish_bass": "Fish Bass",
+      "item.hello.fish_muskellunge": "Fish Muskellunge",
+      "item.hello.fish_electric_eel": "Fish Electric Eel",
+      "gui.hello.quest_gui.quest3": "",
+      "entity.hello.miner_job_npc": "Miner Job Npc",
+      "item.hello.fish_rainbow_trout": "Fish Rainbow Trout",
+      "item.hello.fish_hailbut": "Fish Hailbut",
+      "item.hello.fish_synodontis": "Fish Synodontis",
+      "gui.hello.job_npc_gui.button_geojeol": "거절",
+      "item.hello.farmer_root": "Farmer Root",
+      "gui.hello.quest_not_finished.button_surag": "수락",
+      "gui.hello.quest_gui.label_bosang1": "보상 :",
+      "item.hello.farmer_job_npc_spawn_egg": "Farmer Job Npc Spawn Egg",
+      "item.hello.fish_rod_lv_15": "Fish Rod Lv 1 5",
+      "item.hello.chunwon": "Chunwon",
+      "item.hello.farmer_spore": "Farmer Spore",
+      "item.hello.fish_angler": "Fish Angler",
+      "gui.hello.quest_gui.label_bosang": "보상 :",
+      "item.hello.fisher_job_npc_spawn_egg": "Fisher Job Npc Spawn Egg",
+      "item.hello.fish_red_grouper": "Fish Red Grouper",
+      "gui.hello.quest_gui.label_wanryo1": "완료✅",
+      "gui.hello.quest_gui.quest2": "",
+      "item.hello.fish_tuna": "Fish Tuna",
+      "gui.hello.quest_gui.quest1": "",
+      "entity.hello.fisher_job_npc": "Fisher Job Npc",
+      "item.hello.farmer_dregs": "Farmer Dregs",
+      "item.hello.magicwand": "magic Wand",
+      "item.hello.fish_catfish": "Fish Catfish",
+      "key.hello.open_quest_gui": "Open Quest GUI",
+      "gui.hello.quest_finished.button_bosanghoegdeug": "보상획득",
+      "item.hello.queen_spawn_egg": "Queen Spawn Egg",
+      "item.hello.miner_pick_lv_1": "Miner Pick Lv 1",
+      "item.hello.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
+      "entity.hello.farmer_job_npc": "Farmer Job Npc",
+      "gui.hello.money_gui.label_wanryo1": "완료✅",
+      "gui.hello.money_gui.label_wanryo": "완료✅",
+      "gui.hello.quest_gui.label_wanryo": "완료✅",
+      "item.hello.fish_pollock": "Fish Pollock",
+      "item.hello.ore_coal": "Ore Coal",
+      "item.hello.fish_rod_lv_1": "Fish Rod Lv 1",
+      "item.hello.miner_pick_lv_30": "Miner Pick Lv 3 0",
+      "item.hello.fish_tambaqui": "Fish Tambaqui",
+      "entity.hello.queen": "Queen",
+      "item.hello.fish_carp": "Fish Carp",
+      "gui.hello.quest_finished.button_geojeol": "닫기"
+    },
+    "en_us": {
+      "entity.hello.king": "King",
+      "gui.hello.quest_provide_gui.label_bosang": "보상 :",
+      "item.hello.fish_herring": "Fish Herring",
+      "item.hello.fish_perch": "Fish Perch",
+      "gui.hello.quest_finished.label_bosang": "보상 :",
+      "item.hello.ore_diamond": "Ore Diamond",
+      "gui.hello.quest_gui.label_jinhaengjungin_kweseuteu": "Quest",
+      "item.hello.miner_job_npc_spawn_egg": "Miner Job Npc Spawn Egg",
+      "gui.hello.quest_provide_gui.button_geojeol": "거절",
+      "item.hello.manwon": "Manwon",
+      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
+      "item.hello.ore_iron": "Ore Iron",
+      "gui.hello.quest_not_finished.label_bosang": "보상 :",
+      "item.hello.fish_blue_gill": "Fish Blue Gill",
+      "item.hello.ochunwon": "Ochunwon",
+      "gui.hello.money_gui.button_10000": "10000",
+      "item.hello.pig_spawn_egg": "Pig Spawn Egg",
+      "gui.hello.job_npc_gui.button_surag": "수락",
+      "item.hello.fish_rod_lv_30": "Fish Rod Lv 3 0",
+      "gui.hello.quest_provide_gui.label_quest_contents": "quest contents",
+      "item.hello.king_spawn_egg": "King Spawn Egg",
+      "item.hello.ore_copper": "Ore Copper",
+      "item.hello.miner_pick_lv_15": "Miner Pick Lv 1 5",
+      "item.hello.fish_arapaima": "Fish Arapaima",
+      "item.hello.ore_gold": "Ore Gold",
+      "gui.hello.quest_gui.label_quest2": "quest2",
+      "item.hello.ore_emerald": "Ore Emerald",
+      "gui.hello.quest_gui.label_quest3": "quest3",
+      "gui.hello.money_gui.label_kweseuteu": "인출가능금액 :",
+      "gui.hello.quest_gui.label_quest1": "quest1",
+      "item.hello.ore_lapis_lazuli": "Ore Lapis Lazuli",
+      "gui.hello.quest_gui.label_kweseuteu": "퀘스트",
+      "gui.hello.quest_provide_gui.button_surag": "수락",
+      "gui.hello.money_gui.button_5000": "5000",
+      "entity.hello.pig": "Pig",
+      "gui.hello.money_gui.button_1000": "1000",
+      "gui.hello.quest_not_finished.button_geojeol": "닫기",
+      "item.hello.fish_bass": "Fish Bass",
+      "item.hello.fish_muskellunge": "Fish Muskellunge",
+      "item.hello.fish_electric_eel": "Fish Electric Eel",
+      "gui.hello.quest_gui.quest3": "",
+      "entity.hello.miner_job_npc": "Miner Job Npc",
+      "item.hello.fish_rainbow_trout": "Fish Rainbow Trout",
+      "item.hello.fish_hailbut": "Fish Hailbut",
+      "item.hello.fish_synodontis": "Fish Synodontis",
+      "gui.hello.job_npc_gui.button_geojeol": "거절",
+      "item.hello.farmer_root": "Farmer Root",
+      "gui.hello.quest_not_finished.button_surag": "수락",
+      "gui.hello.quest_gui.label_bosang1": "보상 :",
+      "item.hello.farmer_job_npc_spawn_egg": "Farmer Job Npc Spawn Egg",
+      "item.hello.fish_rod_lv_15": "Fish Rod Lv 1 5",
+      "item.hello.chunwon": "Chunwon",
+      "item.hello.farmer_spore": "Farmer Spore",
+      "item.hello.fish_angler": "Fish Angler",
+      "gui.hello.quest_gui.label_bosang": "보상 :",
+      "item.hello.fisher_job_npc_spawn_egg": "Fisher Job Npc Spawn Egg",
+      "item.hello.fish_red_grouper": "Fish Red Grouper",
+      "gui.hello.quest_gui.label_wanryo1": "완료✅",
+      "gui.hello.quest_gui.quest2": "",
+      "item.hello.fish_tuna": "Fish Tuna",
+      "gui.hello.quest_gui.quest1": "",
+      "entity.hello.fisher_job_npc": "Fisher Job Npc",
+      "item.hello.farmer_dregs": "Farmer Dregs",
+      "item.hello.magicwand": "magic Wand",
+      "item.hello.fish_catfish": "Fish Catfish",
+      "key.hello.open_quest_gui": "Open Quest GUI",
+      "gui.hello.quest_finished.button_bosanghoegdeug": "보상획득",
+      "item.hello.queen_spawn_egg": "Queen Spawn Egg",
+      "item.hello.miner_pick_lv_1": "Miner Pick Lv 1",
+      "item.hello.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
+      "entity.hello.farmer_job_npc": "Farmer Job Npc",
+      "gui.hello.money_gui.label_wanryo1": "완료✅",
+      "gui.hello.money_gui.label_wanryo": "완료✅",
+      "gui.hello.quest_gui.label_wanryo": "완료✅",
+      "item.hello.fish_pollock": "Fish Pollock",
+      "item.hello.ore_coal": "Ore Coal",
+      "item.hello.fish_rod_lv_1": "Fish Rod Lv 1",
+      "item.hello.miner_pick_lv_30": "Miner Pick Lv 3 0",
+      "item.hello.fish_tambaqui": "Fish Tambaqui",
+      "entity.hello.queen": "Queen",
+      "item.hello.fish_carp": "Fish Carp",
+      "gui.hello.quest_finished.button_geojeol": "보상획득"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "UserGUI",
+        "children": [
+          {
+            "name": "quest_gui",
+            "children": []
+          },
+          {
+            "name": "money_gui",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "PIG",
+        "children": []
+      },
+      {
+        "name": "clear",
+        "children": []
+      },
+      {
+        "name": "quest_provide_GUI",
+        "children": []
+      },
+      {
+        "name": "Money",
+        "children": []
+      },
+      {
+        "name": "NPC",
+        "children": [
+          {
+            "name": "KING",
+            "children": []
+          },
+          {
+            "name": "Queen",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "JobNPC",
+        "children": []
+      },
+      {
+        "name": "JobItem",
+        "children": [
+          {
+            "name": "Farmer",
+            "children": []
+          },
+          {
+            "name": "Fisher",
+            "children": []
+          },
+          {
+            "name": "Miner",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "hello",
+    "modName": "hello",
+    "version": "1.0.0",
+    "author": "den11, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "net.mcreator.hello"
+  },
+  "mcreatorVersion": 202400451119
+}
