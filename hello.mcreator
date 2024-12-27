@@ -1639,6 +1639,19 @@
         ]
       },
       "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "SampleProdure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sample_produre",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/SampleProdureProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
