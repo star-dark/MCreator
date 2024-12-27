@@ -1,37 +1,53 @@
 package net.mcreator.hello;
 
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
-@Mod("hello") public class HelloMod {
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.neoforged.neoforge.network.handling.IPayloadHandler;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.IEventBus;
 
+import net.minecraft.util.Tuple;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.hello.network.HelloModVariables;
+import net.mcreator.hello.init.HelloModTabs;
+import net.mcreator.hello.init.HelloModMenus;
+import net.mcreator.hello.init.HelloModItems;
+import net.mcreator.hello.init.HelloModEntities;
+
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Collection;
+import java.util.ArrayList;
+
+@Mod("hello")
+public class HelloMod {
 	public static final Logger LOGGER = LogManager.getLogger(HelloMod.class);
-
 	public static final String MODID = "hello";
 
 	public HelloMod(IEventBus modEventBus) {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
-
 		NeoForge.EVENT_BUS.register(this);
-
 		modEventBus.addListener(this::registerNetworking);
 
-		
-		
-		
 		HelloModItems.REGISTRY.register(modEventBus);
 		HelloModEntities.REGISTRY.register(modEventBus);
 		HelloModTabs.REGISTRY.register(modEventBus);
 		HelloModVariables.ATTACHMENT_TYPES.register(modEventBus);
-		
-		
-		
-		
+
 		HelloModMenus.REGISTRY.register(modEventBus);
-		
-		
-		
 
 		// Start of user code block mod init
 		// End of user code block mod init
@@ -39,11 +55,11 @@ import org.apache.logging.log4j.Logger;
 
 	// Start of user code block mod methods
 	// End of user code block mod methods
-
 	private static boolean networkingRegistered = false;
 	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();
 
-	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {}
+	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+	}
 
 	public static <T extends CustomPacketPayload> void addNetworkMessage(CustomPacketPayload.Type<T> id, StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
 		if (networkingRegistered)
@@ -51,7 +67,8 @@ import org.apache.logging.log4j.Logger;
 		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
 	}
 
-	@SuppressWarnings({"rawtypes", "unchecked"}) private void registerNetworking(final RegisterPayloadHandlersEvent event) {
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	private void registerNetworking(final RegisterPayloadHandlersEvent event) {
 		final PayloadRegistrar registrar = event.registrar(MODID);
 		MESSAGES.forEach((id, networkMessage) -> registrar.playBidirectional(id, ((NetworkMessage) networkMessage).reader(), ((NetworkMessage) networkMessage).handler()));
 		networkingRegistered = true;
@@ -64,7 +81,8 @@ import org.apache.logging.log4j.Logger;
 			workQueue.add(new Tuple<>(action, tick));
 	}
 
-	@SubscribeEvent public void tick(ServerTickEvent.Post event) {
+	@SubscribeEvent
+	public void tick(ServerTickEvent.Post event) {
 		List<Tuple<Runnable, Integer>> actions = new ArrayList<>();
 		workQueue.forEach(work -> {
 			work.setB(work.getB() - 1);
@@ -74,5 +92,4 @@ import org.apache.logging.log4j.Logger;
 		actions.forEach(e -> e.getA().run());
 		workQueue.removeAll(actions);
 	}
-
 }

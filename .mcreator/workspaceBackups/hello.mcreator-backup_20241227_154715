@@ -758,6 +758,41 @@
         ]
       },
       "path": "~/NPC/Queen"
+    },
+    {
+      "name": "ClickCancelButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "click_cancel_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/ClickCancelButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quest_provide_GUI"
+    },
+    {
+      "name": "FarmerJobNpc",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/client/renderer/FarmerJobNpcRenderer.java",
+          "src/main/resources/assets/hello/models/item/farmer_job_npc_spawn_egg.json",
+          "src/main/java/net/mcreator/hello/entity/FarmerJobNpcEntity.java",
+          "src/main/resources/data/hello/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json"
+        ]
+      },
+      "path": "~/JobNPC"
     }
   ],
   "variable_elements": [
@@ -880,6 +915,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "job_production",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "talk_with",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -892,14 +939,15 @@
       "gui.hello.quest_gui.quest3": "",
       "gui.hello.quest_finished.label_bosang": "보상 :",
       "gui.hello.quest_gui.label_jinhaengjungin_kweseuteu": "Quest",
-      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
-      "item.hello.manwon": "Manwon",
       "gui.hello.quest_provide_gui.button_geojeol": "거절",
+      "item.hello.manwon": "Manwon",
+      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
       "gui.hello.quest_not_finished.label_bosang": "보상 :",
       "gui.hello.quest_not_finished.button_surag": "수락",
       "gui.hello.quest_gui.label_bosang1": "보상 :",
       "item.hello.ochunwon": "Ochunwon",
       "gui.hello.money_gui.button_10000": "10000",
+      "item.hello.farmer_job_npc_spawn_egg": "Farmer Job Npc Spawn Egg",
       "item.hello.pig_spawn_egg": "Pig Spawn Egg",
       "item.hello.chunwon": "Chunwon",
       "gui.hello.quest_gui.label_bosang": "보상 :",
@@ -916,6 +964,7 @@
       "gui.hello.quest_finished.button_bosanghoegdeug": "보상획득",
       "gui.hello.quest_gui.label_quest1": "quest1",
       "item.hello.queen_spawn_egg": "Queen Spawn Egg",
+      "entity.hello.farmer_job_npc": "Farmer Job Npc",
       "gui.hello.money_gui.label_wanryo1": "완료✅",
       "gui.hello.quest_gui.label_kweseuteu": "퀘스트",
       "gui.hello.quest_provide_gui.button_surag": "수락",
@@ -934,14 +983,15 @@
       "gui.hello.quest_gui.quest3": "",
       "gui.hello.quest_finished.label_bosang": "보상 :",
       "gui.hello.quest_gui.label_jinhaengjungin_kweseuteu": "Quest",
-      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
-      "item.hello.manwon": "Manwon",
       "gui.hello.quest_provide_gui.button_geojeol": "거절",
+      "item.hello.manwon": "Manwon",
+      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
       "gui.hello.quest_not_finished.label_bosang": "보상 :",
       "gui.hello.quest_not_finished.button_surag": "수락",
       "gui.hello.quest_gui.label_bosang1": "보상 :",
       "item.hello.ochunwon": "Ochunwon",
       "gui.hello.money_gui.button_10000": "10000",
+      "item.hello.farmer_job_npc_spawn_egg": "Farmer Job Npc Spawn Egg",
       "item.hello.pig_spawn_egg": "Pig Spawn Egg",
       "item.hello.chunwon": "Chunwon",
       "gui.hello.quest_gui.label_bosang": "보상 :",
@@ -958,6 +1008,7 @@
       "gui.hello.quest_finished.button_bosanghoegdeug": "보상획득",
       "gui.hello.quest_gui.label_quest1": "quest1",
       "item.hello.queen_spawn_egg": "Queen Spawn Egg",
+      "entity.hello.farmer_job_npc": "Farmer Job Npc",
       "gui.hello.money_gui.label_wanryo1": "완료✅",
       "gui.hello.quest_gui.label_kweseuteu": "퀘스트",
       "gui.hello.quest_provide_gui.button_surag": "수락",
@@ -1015,6 +1066,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "JobNPC",
+        "children": []
       }
     ]
   },
