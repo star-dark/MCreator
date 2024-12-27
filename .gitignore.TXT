@@ -1,0 +1,9 @@
+.gradle/
+
+build/
+
+run/
+
+gradle/wrapper/
+
+.eclipse/configurations/
