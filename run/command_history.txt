@@ -1,0 +1,10 @@
+/gamemode survival
+/gamemode creative Dev
+/
+/time set day
+/gamemode
+/gamemode survival Dev
+/gamemode creative Dev
+/w
+/weather clear
+/time set day

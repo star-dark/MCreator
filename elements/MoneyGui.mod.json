@@ -1,0 +1,128 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 177,
+    "height": 143,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_money_tap",
+          "image": "money_tapon.png",
+          "hoveredImage": "",
+          "x": 162,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_quest_tap",
+          "image": "quest_tap.png",
+          "hoveredImage": "quest_tap_on.png",
+          "onClick": {
+            "name": "OpenQuestGUIPressed"
+          },
+          "x": 127,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_money",
+          "text": {
+            "fixedValue": "",
+            "name": "GetMoney"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 215,
+          "y": 74,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_10000",
+          "text": "10000",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetManwonFromUser"
+          },
+          "width": 38,
+          "height": 20,
+          "x": 139,
+          "y": 148,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_5000",
+          "text": "5000",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetOchunwonFromUser"
+          },
+          "width": 38,
+          "height": 20,
+          "x": 195,
+          "y": 148,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1000",
+          "text": "1000",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetChunwonFromUser"
+          },
+          "width": 38,
+          "height": 20,
+          "x": 250,
+          "y": 148,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inculganeunggeumaeg",
+          "text": {
+            "fixedValue": "인출가능금액 :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 151,
+          "y": 75,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 17,
+      "sy": 19,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

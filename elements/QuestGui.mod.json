@@ -1,0 +1,221 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 177,
+    "height": 143,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kweseuteu",
+          "text": {
+            "fixedValue": "퀘스트"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 205,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_2",
+          "text": {
+            "fixedValue": "",
+            "name": "Quest2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsQuest2"
+          },
+          "x": 145,
+          "y": 140,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wanryo",
+          "text": {
+            "fixedValue": "완료✅"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsComplete1"
+          },
+          "x": 267,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wanryo1",
+          "text": {
+            "fixedValue": "완료✅"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsComplete2"
+          },
+          "x": 267,
+          "y": 142,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_money_tap",
+          "image": "money_tap.png",
+          "hoveredImage": "money_tapon.png",
+          "onClick": {
+            "name": "OpenMoneyGUIPressed"
+          },
+          "x": 162,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_quest_tap",
+          "image": "quest_tap_on.png",
+          "hoveredImage": "",
+          "x": 127,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_1",
+          "text": {
+            "fixedValue": "",
+            "name": "Quest1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsQuest1"
+          },
+          "x": 145,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "QuestProvider1"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 309,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bosang",
+          "text": {
+            "fixedValue": "보상 :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 108,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_bring_reward",
+          "text": {
+            "fixedValue": "",
+            "name": "BringReward"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 190,
+          "y": 108,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bosang1",
+          "text": {
+            "fixedValue": "보상 :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 155,
+          "y": 159,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_bring_reward1",
+          "text": {
+            "fixedValue": "",
+            "name": "BringReward"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 190,
+          "y": 159,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 17,
+      "sy": 19,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
