@@ -899,6 +899,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "job_production",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "talk_with",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -911,9 +923,9 @@
       "gui.hello.quest_gui.quest3": "",
       "gui.hello.quest_finished.label_bosang": "보상 :",
       "gui.hello.quest_gui.label_jinhaengjungin_kweseuteu": "Quest",
-      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
-      "item.hello.manwon": "Manwon",
       "gui.hello.quest_provide_gui.button_geojeol": "거절",
+      "item.hello.manwon": "Manwon",
+      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
       "gui.hello.quest_not_finished.label_bosang": "보상 :",
       "gui.hello.quest_not_finished.button_surag": "수락",
       "gui.hello.quest_gui.label_bosang1": "보상 :",
@@ -953,9 +965,9 @@
       "gui.hello.quest_gui.quest3": "",
       "gui.hello.quest_finished.label_bosang": "보상 :",
       "gui.hello.quest_gui.label_jinhaengjungin_kweseuteu": "Quest",
-      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
-      "item.hello.manwon": "Manwon",
       "gui.hello.quest_provide_gui.button_geojeol": "거절",
+      "item.hello.manwon": "Manwon",
+      "gui.hello.money_gui.label_inculganeunggeumaeg": "인출가능금액 :",
       "gui.hello.quest_not_finished.label_bosang": "보상 :",
       "gui.hello.quest_not_finished.button_surag": "수락",
       "gui.hello.quest_gui.label_bosang1": "보상 :",
