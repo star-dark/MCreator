@@ -16,6 +16,9 @@
           "name": "imagebutton_money_tap",
           "image": "money_tapon.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "OpenMoneyGUIPressed"
+          },
           "x": 162,
           "y": 25,
           "locked": false

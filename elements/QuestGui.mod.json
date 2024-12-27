@@ -104,6 +104,9 @@
           "name": "imagebutton_quest_tap",
           "image": "quest_tap_on.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "OpenQuestGUIPressed"
+          },
           "x": 127,
           "y": 25,
           "locked": false

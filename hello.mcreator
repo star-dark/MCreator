@@ -62,9 +62,9 @@
       "registry_name": "quest_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/hello/client/gui/QuestGuiScreen.java",
+          "src/main/java/net/mcreator/hello/world/inventory/QuestGuiMenu.java",
           "src/main/java/net/mcreator/hello/network/QuestGuiButtonMessage.java",
-          "src/main/java/net/mcreator/hello/world/inventory/QuestGuiMenu.java"
+          "src/main/java/net/mcreator/hello/client/gui/QuestGuiScreen.java"
         ]
       },
       "path": "~/UserGUI/quest_gui"
@@ -226,8 +226,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/hello/network/QuestProvideGUIButtonMessage.java",
-          "src/main/java/net/mcreator/hello/client/gui/QuestProvideGUIScreen.java",
-          "src/main/java/net/mcreator/hello/world/inventory/QuestProvideGUIMenu.java"
+          "src/main/java/net/mcreator/hello/world/inventory/QuestProvideGUIMenu.java",
+          "src/main/java/net/mcreator/hello/client/gui/QuestProvideGUIScreen.java"
         ]
       },
       "path": "~/quest_provide_GUI"
@@ -281,8 +281,8 @@
         "files": [
           "src/main/java/net/mcreator/hello/entity/PigEntity.java",
           "src/main/java/net/mcreator/hello/client/renderer/PigRenderer.java",
-          "src/main/resources/data/hello/neoforge/biome_modifier/pig_biome_modifier.json",
-          "src/main/resources/assets/hello/models/item/pig_spawn_egg.json"
+          "src/main/resources/assets/hello/models/item/pig_spawn_egg.json",
+          "src/main/resources/data/hello/neoforge/biome_modifier/pig_biome_modifier.json"
         ]
       },
       "path": "~/PIG"
@@ -329,9 +329,9 @@
       "registry_name": "quest_finished",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/hello/network/QuestFinishedButtonMessage.java",
           "src/main/java/net/mcreator/hello/world/inventory/QuestFinishedMenu.java",
-          "src/main/java/net/mcreator/hello/client/gui/QuestFinishedScreen.java",
-          "src/main/java/net/mcreator/hello/network/QuestFinishedButtonMessage.java"
+          "src/main/java/net/mcreator/hello/client/gui/QuestFinishedScreen.java"
         ]
       },
       "path": "~/quest_provide_GUI"
@@ -382,8 +382,8 @@
       "registry_name": "magicwand",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hello/models/item/magicwand.json",
-          "src/main/java/net/mcreator/hello/item/MagicwandItem.java"
+          "src/main/java/net/mcreator/hello/item/MagicwandItem.java",
+          "src/main/resources/assets/hello/models/item/magicwand.json"
         ]
       },
       "path": "~/clear"
@@ -540,8 +540,8 @@
       "registry_name": "money_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/hello/network/MoneyGuiButtonMessage.java",
           "src/main/java/net/mcreator/hello/client/gui/MoneyGuiScreen.java",
+          "src/main/java/net/mcreator/hello/network/MoneyGuiButtonMessage.java",
           "src/main/java/net/mcreator/hello/world/inventory/MoneyGuiMenu.java"
         ]
       },
@@ -628,8 +628,8 @@
       "registry_name": "ochunwon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hello/models/item/ochunwon.json",
-          "src/main/java/net/mcreator/hello/item/OchunwonItem.java"
+          "src/main/java/net/mcreator/hello/item/OchunwonItem.java",
+          "src/main/resources/assets/hello/models/item/ochunwon.json"
         ]
       },
       "path": "~/Money"
@@ -752,9 +752,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/hello/neoforge/biome_modifier/queen_biome_modifier.json",
-          "src/main/java/net/mcreator/hello/entity/QueenEntity.java",
           "src/main/java/net/mcreator/hello/client/renderer/QueenRenderer.java",
-          "src/main/resources/assets/hello/models/item/queen_spawn_egg.json"
+          "src/main/resources/assets/hello/models/item/queen_spawn_egg.json",
+          "src/main/java/net/mcreator/hello/entity/QueenEntity.java"
         ]
       },
       "path": "~/NPC/Queen"
@@ -812,6 +812,22 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1034,6 +1050,87 @@
         ]
       },
       "path": "~/JobNPC"
+    },
+    {
+      "name": "FarmerDregs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_dregs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FarmerDregsItem.java",
+          "src/main/resources/assets/hello/models/item/farmer_dregs.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerRoot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hello/models/item/farmer_root.json",
+          "src/main/java/net/mcreator/hello/item/FarmerRootItem.java"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerSpore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_spore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/item/FarmerSporeItem.java",
+          "src/main/resources/assets/hello/models/item/farmer_spore.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerHoeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_hoe_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hello/procedures/FarmerHoeEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Farmer"
     }
   ],
   "variable_elements": [
@@ -1203,16 +1300,19 @@
       "gui.hello.quest_gui.quest3": "",
       "entity.hello.miner_job_npc": "Miner Job Npc",
       "gui.hello.job_npc_gui.button_geojeol": "거절",
+      "item.hello.farmer_root": "Farmer Root",
       "gui.hello.quest_not_finished.button_surag": "수락",
       "gui.hello.quest_gui.label_bosang1": "보상 :",
       "item.hello.farmer_job_npc_spawn_egg": "Farmer Job Npc Spawn Egg",
       "item.hello.chunwon": "Chunwon",
+      "item.hello.farmer_spore": "Farmer Spore",
       "gui.hello.quest_gui.label_bosang": "보상 :",
       "item.hello.fisher_job_npc_spawn_egg": "Fisher Job Npc Spawn Egg",
       "gui.hello.quest_gui.label_wanryo1": "완료✅",
       "gui.hello.quest_gui.quest2": "",
       "gui.hello.quest_gui.quest1": "",
       "entity.hello.fisher_job_npc": "Fisher Job Npc",
+      "item.hello.farmer_dregs": "Farmer Dregs",
       "item.hello.magicwand": "magic Wand",
       "key.hello.open_quest_gui": "Open Quest GUI",
       "gui.hello.quest_finished.button_bosanghoegdeug": "보상획득",
@@ -1253,16 +1353,19 @@
       "gui.hello.quest_gui.quest3": "",
       "entity.hello.miner_job_npc": "Miner Job Npc",
       "gui.hello.job_npc_gui.button_geojeol": "거절",
+      "item.hello.farmer_root": "Farmer Root",
       "gui.hello.quest_not_finished.button_surag": "수락",
       "gui.hello.quest_gui.label_bosang1": "보상 :",
       "item.hello.farmer_job_npc_spawn_egg": "Farmer Job Npc Spawn Egg",
       "item.hello.chunwon": "Chunwon",
+      "item.hello.farmer_spore": "Farmer Spore",
       "gui.hello.quest_gui.label_bosang": "보상 :",
       "item.hello.fisher_job_npc_spawn_egg": "Fisher Job Npc Spawn Egg",
       "gui.hello.quest_gui.label_wanryo1": "완료✅",
       "gui.hello.quest_gui.quest2": "",
       "gui.hello.quest_gui.quest1": "",
       "entity.hello.fisher_job_npc": "Fisher Job Npc",
+      "item.hello.farmer_dregs": "Farmer Dregs",
       "item.hello.magicwand": "magic Wand",
       "key.hello.open_quest_gui": "Open Quest GUI",
       "gui.hello.quest_finished.button_bosanghoegdeug": "보상획득",
@@ -1323,6 +1426,15 @@
       {
         "name": "JobNPC",
         "children": []
+      },
+      {
+        "name": "JobItem",
+        "children": [
+          {
+            "name": "Farmer",
+            "children": []
+          }
+        ]
       }
     ]
   },

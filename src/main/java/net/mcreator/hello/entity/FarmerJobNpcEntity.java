@@ -146,7 +146,7 @@ public class FarmerJobNpcEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level();
 
-		FarmerTalkProcedure.execute(entity, sourceentity);
+		FarmerTalkProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 

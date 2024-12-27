@@ -13,6 +13,9 @@ import net.minecraft.world.item.Item;
 import net.mcreator.hello.item.OchunwonItem;
 import net.mcreator.hello.item.ManwonItem;
 import net.mcreator.hello.item.MagicwandItem;
+import net.mcreator.hello.item.FarmerSporeItem;
+import net.mcreator.hello.item.FarmerRootItem;
+import net.mcreator.hello.item.FarmerDregsItem;
 import net.mcreator.hello.item.ChunwonItem;
 import net.mcreator.hello.HelloMod;
 
@@ -28,6 +31,9 @@ public class HelloModItems {
 	public static final DeferredItem<Item> FARMER_JOB_NPC_SPAWN_EGG = REGISTRY.register("farmer_job_npc_spawn_egg", () -> new DeferredSpawnEggItem(HelloModEntities.FARMER_JOB_NPC, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> FISHER_JOB_NPC_SPAWN_EGG = REGISTRY.register("fisher_job_npc_spawn_egg", () -> new DeferredSpawnEggItem(HelloModEntities.FISHER_JOB_NPC, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> MINER_JOB_NPC_SPAWN_EGG = REGISTRY.register("miner_job_npc_spawn_egg", () -> new DeferredSpawnEggItem(HelloModEntities.MINER_JOB_NPC, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> FARMER_DREGS = REGISTRY.register("farmer_dregs", FarmerDregsItem::new);
+	public static final DeferredItem<Item> FARMER_ROOT = REGISTRY.register("farmer_root", FarmerRootItem::new);
+	public static final DeferredItem<Item> FARMER_SPORE = REGISTRY.register("farmer_spore", FarmerSporeItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

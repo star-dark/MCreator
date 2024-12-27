@@ -11,6 +11,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.hello.world.inventory.JobNpcGUIMenu;
 import net.mcreator.hello.network.HelloModVariables;
 
 import io.netty.buffer.Unpooled;

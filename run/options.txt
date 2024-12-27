@@ -51,7 +51,7 @@ narratorHotkey:true
 resourcePacks:["vanilla","mod_resources"]
 incompatibleResourcePacks:[]
 lastServer:localhost:25463
-lang:ko_kr
+lang:en_us
 chatVisibility:0
 chatOpacity:1.0
 chatLineSpacing:0.0
